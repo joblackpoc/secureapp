@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://django-axes.readthedocs.io/en/latest/2_installation.html -->
+<html class="writer-html4" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation</title><link rel="stylesheet" href="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/theme.css" type="text/css">
+    <link rel="stylesheet" href="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/pygments.css" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/documentation_options.js.download"></script>
+        <script type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/jquery.js.download"></script>
+        <script type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/underscore.js.download"></script>
+        <script type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/doctools.js.download"></script>
+        <script type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/language_data.js.download"></script>
+        <script async="async" type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/readthedocs-doc-embed.js.download"></script>
+    <script src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/theme.js.download"></script>
+    <link rel="index" title="Index" href="https://django-axes.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://django-axes.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="3. Usage" href="https://django-axes.readthedocs.io/en/latest/3_usage.html">
+    <link rel="prev" title="1. Requirements" href="https://django-axes.readthedocs.io/en/latest/1_requirements.html"> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "builder": "sphinx", "canonical_url": null, "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "2_installation", "programming_language": "py", "project": "django-axes", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/readthedocs-analytics.js.download" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+<script src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/ethicalads.min.js.download" type="text/javascript" async="" id="ethicaladsjs"></script><script src="./2. Installation — django-axes 6.1.1.dev20+ge781d67 documentation_files/js" type="text/javascript" async=""></script></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+
+          
+          
+          <a href="https://django-axes.readthedocs.io/en/latest/index.html" class="icon icon-home">
+            django-axes
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://django-axes.readthedocs.io/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/1_requirements.html">1. Requirements</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal current" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#" aria-expanded="true"><button class="toctree-expand" title="Open/close menu"></button>2. Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#version-6-breaking-changes-and-upgrading-from-django-axes-version-5">Version 6 breaking changes and upgrading from django-axes version 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-axes-system-checks">Disabling Axes system checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-axes-components-in-tests">Disabling Axes components in tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-atomic-requests">Disabling atomic requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/3_usage.html">3. Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/4_configuration.html">4. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/5_customization.html">5. Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/6_integration.html">6. Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/7_architecture.html">7. Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/8_reference.html">8. API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/9_contributing.html">9. Contributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/9_contributing.html#development">10. Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-axes.readthedocs.io/en/latest/10_changelog.html">11. Changes</a></li>
+</ul>
+
+        </div>
+      <div id="rtd-sidebar" data-ea-publisher="readthedocs" data-ea-type="readthedocs-sidebar" data-ea-manual="true" class="ethical-rtd ethical-dark-theme" data-ea-keywords="python|readthedocs-project-56152|readthedocs-project-django-axes" data-ea-campaign-types="community|house|paid"></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://django-axes.readthedocs.io/en/latest/index.html">django-axes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="https://django-axes.readthedocs.io/en/latest/index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">2. Installation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/jazzband/django-axes/blob/master/docs/2_installation.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="installation">
+<span id="id1"></span><h1>2. Installation<a class="headerlink" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#installation" title="Permalink to this headline">¶</a></h1>
+<p>Axes is easy to install from the PyPI package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install django-axes[ipware]  # use django-ipware for resolving client IP addresses OR
+$ pip install django-axes          # implement and configure custom AXES_CLIENT_IP_CALLABLE
+</pre></div>
+</div>
+<p>After installing the package, the project settings need to be configured.</p>
+<p><strong>1.</strong> Add <code class="docutils literal notranslate"><span class="pre">axes</span></code> to your <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'django.contrib.admin'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.auth'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.contenttypes'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.sessions'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.messages'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.staticfiles'</span><span class="p">,</span>
+
+    <span class="c1"># Axes app can be in any position in the INSTALLED_APPS list.</span>
+    <span class="s1">'axes'</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>2.</strong> Add <code class="docutils literal notranslate"><span class="pre">axes.backends.AxesStandaloneBackend</span></code> to the top of <code class="docutils literal notranslate"><span class="pre">AUTHENTICATION_BACKENDS</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>AUTHENTICATION_BACKENDS = [
+    # AxesStandaloneBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
+    'axes.backends.AxesStandaloneBackend',
+
+    # Django ModelBackend is the default authentication backend.
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+For backwards compatibility, ``AxesBackend`` can be used in place of ``AxesStandaloneBackend``.
+The only difference is that ``AxesBackend`` also provides the permissions-checking functionality
+of Django's ``ModelBackend`` behind the scenes. We recommend using ``AxesStandaloneBackend``
+if you have any custom logic to override Django's standard permissions checks.
+</pre></div>
+</div>
+<p><strong>3.</strong> Add <code class="docutils literal notranslate"><span class="pre">axes.middleware.AxesMiddleware</span></code> to your list of <code class="docutils literal notranslate"><span class="pre">MIDDLEWARE</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MIDDLEWARE</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># The following is the list of default middleware in new Django projects.</span>
+    <span class="s1">'django.middleware.security.SecurityMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.sessions.middleware.SessionMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.middleware.common.CommonMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.middleware.csrf.CsrfViewMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.auth.middleware.AuthenticationMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.contrib.messages.middleware.MessageMiddleware'</span><span class="p">,</span>
+    <span class="s1">'django.middleware.clickjacking.XFrameOptionsMiddleware'</span><span class="p">,</span>
+
+    <span class="c1"># AxesMiddleware should be the last middleware in the MIDDLEWARE list.</span>
+    <span class="c1"># It only formats user lockout messages and renders Axes lockout responses</span>
+    <span class="c1"># on failed user authentication attempts from login views.</span>
+    <span class="c1"># If you do not want Axes to override the authentication response</span>
+    <span class="c1"># you can skip installing the middleware and use your own views.</span>
+    <span class="s1">'axes.middleware.AxesMiddleware'</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>4.</strong> Run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">check</span></code> to check the configuration.</p>
+<p><strong>5.</strong> Run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">migrate</span></code> to sync the database.</p>
+<p>Axes is now functional with the default settings and is saving user attempts
+into your database and locking users out if they exceed the maximum attempts.</p>
+<p>You should use the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">check</span></code> command to verify the correct configuration in
+development, staging, and production environments. It is probably best to use this step as part
+of your regular CI workflows to verify that your project is not misconfigured.</p>
+<p>Axes uses checks to verify your Django settings configuration for security and functionality.
+Many people have different configurations for their development and production environments,
+and running the application with misconfigured settings can prevent security features from working.</p>
+<div class="section" id="version-6-breaking-changes-and-upgrading-from-django-axes-version-5">
+<h2>Version 6 breaking changes and upgrading from django-axes version 5<a class="headerlink" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#version-6-breaking-changes-and-upgrading-from-django-axes-version-5" title="Permalink to this headline">¶</a></h2>
+<p>If you have not specialized <code class="docutils literal notranslate"><span class="pre">django-axes</span></code> configuration in any way
+you do not have to update any of the configuration.</p>
+<p>The instructions apply to users who have configured <code class="docutils literal notranslate"><span class="pre">django-axes</span></code> in their projects
+and have used flags that are deprecated. The deprecated flags will be removed in the future
+but are compatible for at least version 6.0 of <code class="docutils literal notranslate"><span class="pre">django-axes</span></code>.</p>
+<p>The following flags and configuration have changed:</p>
+<p><code class="docutils literal notranslate"><span class="pre">django-ipware</span></code> has become an optional dependency.
+To keep old behaviour, use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">django-axes[ipware]</span></code>
+in your install script or use <code class="docutils literal notranslate"><span class="pre">django-axes[ipware]</span></code>
+in your requirements file(s) instead of plain <code class="docutils literal notranslate"><span class="pre">django-axes</span></code>.
+The new <code class="docutils literal notranslate"><span class="pre">django-axes</span></code> package does not include <code class="docutils literal notranslate"><span class="pre">django-ipware</span></code> by default
+but does use <code class="docutils literal notranslate"><span class="pre">django-ipware</span></code> if it is installed
+and no callables for IP address resolution are configured
+with the <code class="docutils literal notranslate"><span class="pre">settings.AXES_CLIENT_IP_CALLABLE</span></code> configuration flag.</p>
+<p><code class="docutils literal notranslate"><span class="pre">django-ipware</span></code> related flags have changed names.
+The old flags have been deprecated and will be removed in the future.
+To keep old behaviour, rename them in your settings file:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_PROXY_ORDER</span></code> is now <code class="docutils literal notranslate"><span class="pre">settings.AXES_IPWARE_PROXY_ORDER</span></code>,</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_PROXY_COUNT</span></code>  is now <code class="docutils literal notranslate"><span class="pre">settings.AXES_IPWARE_PROXY_COUNT</span></code>,</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_PROXY_TRUSTED_IPS</span></code> is now <code class="docutils literal notranslate"><span class="pre">settings.AXES_IPWARE_PROXY_TRUSTED_IPS</span></code>, and</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_META_PRECEDENCE_ORDER</span></code> is now <code class="docutils literal notranslate"><span class="pre">settings.AXES_IPWARE_META_PRECEDENCE_ORDER</span></code>.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span></code> configuration flag has been added which supersedes the following configuration keys:</p>
+<ol class="arabic simple">
+<li>No configuration for failure tracking in the following items (default behaviour).</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_ONLY_USER_FAILURES</span></code>,</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP</span></code>,</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_USER_OR_IP</span></code>, and</li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code>.</li>
+</ol>
+<p>To keep old behaviour with the new flag, configure the following:</p>
+<ol class="arabic simple">
+<li>If you did not use any flags, use <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">["ip_address"]</span></code>,</li>
+<li>If you used <code class="docutils literal notranslate"><span class="pre">settings.AXES_ONLY_USER_FAILURES</span></code>, use <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">["username"]</span></code>,</li>
+<li>If you used <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_USER_OR_IP</span></code>, use <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">["username",</span> <span class="pre">"ip_address"]</span></code>, and</li>
+<li>If you used <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP</span></code>, use <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">[["username",</span> <span class="pre">"ip_address"]]</span></code>,</li>
+<li><dl class="first docutils">
+<dt>If you used <code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code>, add <code class="docutils literal notranslate"><span class="pre">"user_agent"</span></code> to your list(s) of lockout parameters.</dt>
+<dd><ol class="first last arabic">
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code> would become <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">[["ip_address",</span> <span class="pre">"user_agent"]]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code> with <code class="docutils literal notranslate"><span class="pre">settings.AXES_ONLY_USER_FAILURES</span></code> would become <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">[["username",</span> <span class="pre">"user_agent"]]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code> with <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_USER_OR_IP</span></code> would become <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">[["ip_address",</span> <span class="pre">"user_agent"],</span> <span class="pre">"username"]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">settings.AXES_USE_USER_AGENT</span></code> with <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP</span></code> would become <code class="docutils literal notranslate"><span class="pre">settings.AXES_LOCKOUT_PARAMETERS</span> <span class="pre">=</span> <span class="pre">[["ip_address",</span> <span class="pre">"user_agent",</span> <span class="pre">"username"]]</span></code></li>
+<li>Other combinations of flags were previously not considered; the flags had precedence over each other as described in the documentation but were less-than-trivial to understand in their previous form. The new form is more explicit and flexible, although it requires more in-depth configuration.</li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+<p>The new lockout parameters define a combined list of attributes to consider when tracking failed authentication attempts.
+They can be any combination of <code class="docutils literal notranslate"><span class="pre">username</span></code>, <code class="docutils literal notranslate"><span class="pre">ip_address</span></code> or <code class="docutils literal notranslate"><span class="pre">user_agent</span></code> in a list of strings or list of lists of strings.
+The attributes defined in the lists are combined and saved into the database, cache, or other backend for failed logins.
+The semantics of the evaluation are available in the documentation and <code class="docutils literal notranslate"><span class="pre">axes.helpers.get_client_parameters</span></code> callable.</p>
+<p><code class="docutils literal notranslate"><span class="pre">settings.AXES_HTTP_RESPONSE_CODE</span></code> default has been changed from <code class="docutils literal notranslate"><span class="pre">403</span></code> (Forbidden) to <code class="docutils literal notranslate"><span class="pre">429</span></code> (Too Many Requests).
+To keep the old behavior, set <code class="docutils literal notranslate"><span class="pre">settings.AXES_HTTP_RESPONSE_CODE</span> <span class="pre">=</span> <span class="pre">403</span></code> in your settings.</p>
+<p><code class="docutils literal notranslate"><span class="pre">axes.handlers.base.AxesBaseHandler.is_admin_site</span></code> has been deprecated due to misleading naming
+in favour of better-named <code class="docutils literal notranslate"><span class="pre">axes.handlers.base.AxesBaseHandler.is_admin_request</span></code>.
+The old implementation has been kept for backwards compatibility, but will be removed in the future.
+The old implementation checked if a request is NOT made for an admin site if <code class="docutils literal notranslate"><span class="pre">settings.AXES_ONLY_ADMIN_SITE</span></code> was set.
+The new implementation correctly checks if a request is made for an admin site.</p>
+<p><code class="docutils literal notranslate"><span class="pre">axes.handlers.cache.AxesCacheHandler</span></code> has been updated to use atomic <code class="docutils literal notranslate"><span class="pre">cache.incr</span></code> calls
+instead of old <code class="docutils literal notranslate"><span class="pre">cache.set</span></code> calls in authentication failure tracking
+to enable better parallel backend support for atomic cache backends like Redis and Memcached.</p>
+</div>
+<div class="section" id="disabling-axes-system-checks">
+<h2>Disabling Axes system checks<a class="headerlink" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-axes-system-checks" title="Permalink to this headline">¶</a></h2>
+<p>If you are implementing custom authentication, request middleware, or signal handlers
+the Axes checks system might generate false positives in the Django checks framework.</p>
+<p>You can silence the unnecessary warnings by using the following Django settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SILENCED_SYSTEM_CHECKS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'axes.W003'</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Axes has the following warnings codes built in:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">axes.W001</span></code> for invalid <code class="docutils literal notranslate"><span class="pre">CACHES</span></code> configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">axes.W002</span></code> for invalid <code class="docutils literal notranslate"><span class="pre">MIDDLEWARE</span></code> configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">axes.W003</span></code> for invalid <code class="docutils literal notranslate"><span class="pre">AUTHENTICATION_BACKENDS</span></code> configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">axes.W004</span></code> for deprecated use of <code class="docutils literal notranslate"><span class="pre">AXES_*</span></code> setting flags.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only disable the Axes system checks and warnings if you know what you are doing.
+The default checks are implemented to verify and improve your project’s security
+and should only produce necessary warnings due to misconfigured settings.</p>
+</div>
+</div>
+<div class="section" id="disabling-axes-components-in-tests">
+<h2>Disabling Axes components in tests<a class="headerlink" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-axes-components-in-tests" title="Permalink to this headline">¶</a></h2>
+<p>If you get errors when running tests, try setting the
+<code class="docutils literal notranslate"><span class="pre">AXES_ENABLED</span></code> flag to <code class="docutils literal notranslate"><span class="pre">False</span></code> in your test settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AXES_ENABLED</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>This disables the Axes middleware, authentication backend and signal receivers,
+which might fix errors with incompatible test configurations.</p>
+</div>
+<div class="section" id="disabling-atomic-requests">
+<h2>Disabling atomic requests<a class="headerlink" href="https://django-axes.readthedocs.io/en/latest/2_installation.html#disabling-atomic-requests" title="Permalink to this headline">¶</a></h2>
+<p>Django offers atomic database transactions that are tied to HTTP requests
+and toggled on and off with the <code class="docutils literal notranslate"><span class="pre">ATOMIC_REQUESTS</span></code> configuration.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">ATOMIC_REQUESTS</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code> Django will always either perform
+all database read and write operations in one successful atomic transaction
+or in a case of failure roll them back, leaving no trace of the failed
+request in the database.</p>
+<p>However, sometimes Axes or another plugin can misbehave or not act correctly with
+other code, preventing the login mechanisms from working due to e.g. exception
+being thrown in some part of the code, preventing access attempts being logged
+to database with Axes or causing similar problems.</p>
+<p>If new attempts or log objects are not being correctly written to the Axes tables,
+it is possible to configure Django <code class="docutils literal notranslate"><span class="pre">ATOMIC_REQUESTS</span></code> setting to to <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ATOMIC_REQUESTS</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Please note that atomic requests are usually desirable when writing e.g. RESTful APIs,
+but sometimes it can be problematic and warrant a disable.</p>
+<p>Before disabling atomic requests or configuring them please read the relevant
+Django documentation and make sure you know what you are configuring
+rather than just toggling the flag on and off for testing.</p>
+<p>Also note that the cache backend can provide correct functionality with
+Memcached or Redis caches even with exceptions being thrown in the stack.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="https://django-axes.readthedocs.io/en/latest/1_requirements.html" class="btn btn-neutral float-left" title="1. Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="https://django-axes.readthedocs.io/en/latest/3_usage.html" class="btn btn-neutral float-right" title="3. Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© Copyright 2016, Jazzband.
+      <span class="commit">Revision <code>e781d675</code>.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+        <dd class="rtd-current-item">
+          <a href="https://django-axes.readthedocs.io/en/latest/2_installation.html">latest</a>
+        </dd>
+        
+        <dd>
+          <a href="https://django-axes.readthedocs.io/en/stable/2_installation.html">stable</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://django-axes.readthedocs.io/_/downloads/en/latest/pdf/">PDF</a></dd>
+        
+        <dd><a href="https://django-axes.readthedocs.io/_/downloads/en/latest/epub/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-axes/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-axes/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-axes/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/jazzband/django-axes/blob/master/docs/2_installation.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/jazzband/django-axes/edit/master/docs/2_installation.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/django-axes/search/" method="get">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      <hr>
+
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+</body></html>
