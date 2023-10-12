@@ -39,9 +39,23 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'secureapp',
-    'crispy_forms'
+    'crispy_forms',
+    'captcha',
 ]
 
+
+# reCAPTCHA keys 
+
+RECAPTCHA_PUBLIC_KEY = '' # - Enter your ReCAPTCHA keys here
+RECAPTCHA_PRIVATE_KEY = '' # - Enter your ReCAPTCHA keys here
+
+RECAPTCHA_PROXY = {'http': 'http://127.0.0.1:8000', 'https': 'https://127.0.0.1:8000'} # localhost
+
+RECAPTCHA_DOMAIN = 'www.recaptcha.net' # Example domain
+
+SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error'] # Mute system check
+
+#crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
